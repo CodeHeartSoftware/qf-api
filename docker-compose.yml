@@ -1,0 +1,22 @@
+# docker compose up --build
+#
+# Runs apps/api on the same port it uses in local (non-Docker) dev — http://localhost:4410. The UI
+# lives in its own repo (quant-fusion-ui) and runs separately; it calls this API at
+# http://localhost:4410 by default.
+#
+# The container has no `docker` CLI/socket (see apps/api/Dockerfile), so running simulations
+# ("Run Next Round", "Run Preview", historical simulation creation, the daily cycle) fails with
+# `spawn docker ENOENT` here. For full functionality run the API on the HOST instead
+# (`yarn workspace @quant-fusion/api dev`). Price-data fetching and everything read-only work fine
+# containerized.
+services:
+  quant-fusion-api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    ports:
+      - '4410:4410'
+    volumes:
+      # The shared SQLite files — mounted, not baked into the image, so the container and the host
+      # CLI (`yarn qf match forward ...`) always see the same live data.
+      - ./.quant-fusion:/app/.quant-fusion

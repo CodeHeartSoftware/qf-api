@@ -1,0 +1,15 @@
+# Rebuilt inside the image, never copied in from the host.
+**/node_modules
+**/dist
+**/*.tsbuildinfo
+
+# Vendored bot tarballs (bots/**/vendor) — large, and only needed to build/run a bot image
+# directly, never to build apps/stock-market-4-{api,ui} (which only read bot manifest.json files).
+**/vendor
+
+.git
+.DS_Store
+
+# Live, host-generated state (the shared SQLite file, mounted as a volume instead — see
+# docker-compose.yml) — never baked into an image.
+.quant-fusion/

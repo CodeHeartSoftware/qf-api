@@ -1,0 +1,37 @@
+{
+  "name": "quant-fusion-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=25 <26"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "packages/stock-market-4/*",
+    "packages/stock-market-4/research/*",
+    "games/*"
+  ],
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "typecheck": "yarn workspaces run typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "NODE_OPTIONS=--max-old-space-size=6144 eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "quant-fusion": "tsx apps/cli/src/index.ts",
+    "qf": "tsx apps/cli/src/index.ts",
+    "upstream:sync": "bash scripts/upstream-sync.sh"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "eslint": "^9.13.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.11.0",
+    "vitest": "^2.1.4"
+  }
+}

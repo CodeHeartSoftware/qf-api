@@ -1,0 +1,10 @@
+{
+  "protocolVersion": "1.0",
+  "type": "action",
+  "matchId": "match-001",
+  "seq": 2,
+  "sentAt": "2026-01-01T00:00:02.000Z",
+  "payload": {
+    "action": { "choice": "rock" }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "quant-v0",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "backtest": "tsx backtest/runBacktest.ts"
+  },
+  "dependencies": {
+    "@quant-fusion/bot-sdk-js": "file:./vendor/quant-fusion-bot-sdk-js.tgz",
+    "@quant-fusion/quant-sdk-js": "file:./vendor/quant-fusion-quant-sdk-js.tgz"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}

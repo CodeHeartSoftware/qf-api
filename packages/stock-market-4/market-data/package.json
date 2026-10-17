@@ -1,0 +1,24 @@
+{
+  "name": "@quant-fusion/market-data",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "vitest run",
+    "seed:fusion-fixture": "tsx --tsconfig tsconfig.test.json scripts/seedFusionFixture.ts",
+    "seed:fusion-fundamental-v0": "tsx --tsconfig tsconfig.test.json scripts/seedFusionFundamentalV0.ts",
+    "append:bars": "tsx --tsconfig tsconfig.test.json scripts/appendBarsFromFile.ts",
+    "fetch:append-bars": "tsx --tsconfig tsconfig.test.json scripts/fetchAndAppendBars.ts",
+    "fetch:publish-version": "tsx --tsconfig tsconfig.test.json scripts/fetchAndPublishVersion.ts",
+    "add:new-ticker": "tsx --tsconfig tsconfig.test.json scripts/addNewTicker.ts"
+  },
+  "dependencies": {
+    "@quant-fusion/fusion-universe": "^0.1.0",
+    "@quant-fusion/sqlite-migrations": "^0.1.0",
+    "zod": "^3.23.8"
+  }
+}

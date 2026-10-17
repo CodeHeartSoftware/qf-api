@@ -1,0 +1,17 @@
+{
+  "id": "stock-market-4",
+  "name": "Stock Market 4",
+  "version": "0.1.0",
+  "entryPackage": "@quant-fusion/game-stock-market-4",
+  "protocolVersion": "^1.0",
+  "minParticipants": 1,
+  "maxParticipants": 10,
+  "deterministic": true,
+  "maintainers": [
+    {
+      "name": "Tom Sarver",
+      "contact": "https://github.com/CodeHeartSoftware"
+    }
+  ],
+  "description": "A research-driven portfolio-management simulation: a bot manages a portfolio of securities across historical-replay or synthetic-scenario markets, optionally informed by an opaque external research snapshot the game merely delivers without interpreting. Portfolio/margin/short-selling/financing/corporate-action mechanics carry forward stock-market-3's proven accounting; execution is deliberately simplified (no order book) to keep the focus on portfolio-management decisions rather than exchange microstructure."
+}

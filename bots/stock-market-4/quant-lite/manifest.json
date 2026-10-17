@@ -1,0 +1,18 @@
+{
+  "id": "quant-lite",
+  "name": "Quant Lite",
+  "version": "0.1.0",
+  "game": "stock-market-4",
+  "author": {
+    "name": "Quant Fusion Maintainers",
+    "contact": "maintainers@example.com"
+  },
+  "runtime": {
+    "language": "node"
+  },
+  "interface": {
+    "transport": "stdio"
+  },
+  "protocolVersion": "^1.0",
+  "description": "Deliberately stripped-down sibling of quant-v0: reuses the same real, point-in-time-safe fair-value model (@quant-fusion/quant-sdk-js's computeSecurityAlpha, same 11 real-price-anchored securities) but replaces its 5-signal ensemble/correlation/portfolio-construction pipeline with a single valuation-gap ranking, a small top-K equal-weight book, and a wide rebalance deadband — targeting quant-v0's own measured weaknesses (near-zero contribution from 4 of its 5 signals, ~3.5-3.7% cost drag from frequent rebalancing) rather than a new, unproven signal."
+}

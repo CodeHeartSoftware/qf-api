@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    // Wider than tsconfig.json's own "src": `scripts/seedFusionFundamentalV0.ts` deliberately
+    // reads `bots/stock-market-4/fusion-fundamental-v0/backtest/*.ts` by relative path (see that
+    // file's own doc comment), which sits outside this package entirely. "../../.." (the repo
+    // root) is the narrowest common ancestor of this package and that bot — harmless since this
+    // config is noEmit-only and never used to lay out real output files.
+    "rootDir": "../../.."
+  },
+  "include": ["src", "test", "scripts"]
+}

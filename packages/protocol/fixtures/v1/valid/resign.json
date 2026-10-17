@@ -1,0 +1,11 @@
+{
+  "protocolVersion": "1.0",
+  "type": "resign",
+  "matchId": "match-001",
+  "roundId": 4,
+  "seq": 8,
+  "sentAt": "2026-01-01T00:00:40.000Z",
+  "payload": {
+    "note": "no winning move available"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@quant-fusion/research-store",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "vitest run",
+    "apply:research-update": "tsx --tsconfig tsconfig.test.json scripts/applyResearchUpdate.ts",
+    "print:dataset": "tsx --tsconfig tsconfig.test.json scripts/printDataset.ts",
+    "print:domains": "tsx --tsconfig tsconfig.test.json scripts/printDomains.ts",
+    "create:domain": "tsx --tsconfig tsconfig.test.json scripts/createResearchDomain.ts",
+    "manage:tracked-ticker": "tsx --tsconfig tsconfig.test.json scripts/manageTrackedTickers.ts",
+    "print:tracked-tickers": "tsx --tsconfig tsconfig.test.json scripts/printTrackedTickers.ts",
+    "delete:research-item": "tsx --tsconfig tsconfig.test.json scripts/deleteResearchItem.ts",
+    "manage:event-type": "tsx --tsconfig tsconfig.test.json scripts/manageEventTypes.ts",
+    "print:event-types": "tsx --tsconfig tsconfig.test.json scripts/printEventTypes.ts",
+    "manage:entity-type": "tsx --tsconfig tsconfig.test.json scripts/manageEntityTypes.ts",
+    "print:entity-types": "tsx --tsconfig tsconfig.test.json scripts/printEntityTypes.ts",
+    "manage:relationship-type": "tsx --tsconfig tsconfig.test.json scripts/manageRelationshipTypes.ts",
+    "print:relationship-types": "tsx --tsconfig tsconfig.test.json scripts/printRelationshipTypes.ts"
+  },
+  "dependencies": {
+    "@quant-fusion/research-core": "^0.1.0",
+    "@quant-fusion/sqlite-migrations": "^0.1.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "protocolVersion": "1.0",
+  "type": "result",
+  "matchId": "match-001",
+  "seq": 3,
+  "sentAt": "2026-01-01T00:00:03.000Z",
+  "payload": {
+    "scope": "round",
+    "outcome": { "winner": "p1" }
+  }
+}

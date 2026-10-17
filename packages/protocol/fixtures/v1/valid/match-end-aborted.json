@@ -1,0 +1,11 @@
+{
+  "protocolVersion": "1.0",
+  "type": "match-end",
+  "matchId": "match-002",
+  "seq": 4,
+  "sentAt": "2026-01-01T00:00:20.000Z",
+  "payload": {
+    "result": null,
+    "reason": "aborted"
+  }
+}

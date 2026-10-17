@@ -1,0 +1,15 @@
+{
+  "protocolVersion": "1.0",
+  "type": "init",
+  "matchId": "match-001",
+  "seq": 0,
+  "sentAt": "2026-01-01T00:00:00.000Z",
+  "payload": {
+    "gameId": "rock-paper-scissors",
+    "gameVersion": "1.0.0",
+    "participantId": "p1",
+    "roster": ["p1", "p2"],
+    "rngSeed": "a1b2c3d4",
+    "config": { "bestOf": 3 }
+  }
+}

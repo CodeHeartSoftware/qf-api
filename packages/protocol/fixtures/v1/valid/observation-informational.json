@@ -1,0 +1,12 @@
+{
+  "protocolVersion": "1.0",
+  "type": "observation",
+  "matchId": "match-001",
+  "roundId": 2,
+  "seq": 5,
+  "sentAt": "2026-01-01T00:00:10.000Z",
+  "payload": {
+    "state": { "round": 2, "opponentMoved": true },
+    "awaitingAction": false
+  }
+}

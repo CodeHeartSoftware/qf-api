@@ -1,0 +1,12 @@
+{
+  "protocolVersion": "1.0",
+  "type": "error",
+  "matchId": "match-001",
+  "roundId": 2,
+  "seq": 6,
+  "sentAt": "2026-01-01T00:00:11.000Z",
+  "payload": {
+    "reason": "TURN_TIMEOUT",
+    "detail": "no action received before deadline"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@quant-fusion/research-fusion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "vitest run",
+    "emit:forward-config": "tsx --tsconfig tsconfig.test.json scripts/emitForwardMatchConfig.ts",
+    "list:entities": "tsx --tsconfig tsconfig.test.json scripts/printKnownEntities.ts",
+    "generate:fusion-seed-migration": "tsx --tsconfig tsconfig.test.json scripts/generateFusionSeedMigration.ts"
+  },
+  "dependencies": {
+    "@quant-fusion/fusion-universe": "^0.1.0",
+    "@quant-fusion/game-stock-market-4": "^0.1.0",
+    "@quant-fusion/research-core": "^0.1.0",
+    "@quant-fusion/research-store": "^0.1.0",
+    "@quant-fusion/sqlite-migrations": "^0.1.0"
+  }
+}

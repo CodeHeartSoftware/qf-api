@@ -1,0 +1,31 @@
+{
+  "name": "@quant-fusion/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "vitest run",
+    "start": "node dist/index.js",
+    "stop": "bash scripts/stop.sh",
+    "dev": "tsx watch src/index.ts",
+    "docker:up": "bash scripts/up.sh",
+    "docker:down": "bash scripts/down.sh"
+  },
+  "dependencies": {
+    "@quant-fusion/forward-match-store": "^0.1.0",
+    "@quant-fusion/fusion-universe": "^0.1.0",
+    "@quant-fusion/game-stock-market-4": "^0.1.0",
+    "@quant-fusion/job-run-store": "^0.1.0",
+    "@quant-fusion/market-data": "^0.1.0",
+    "@quant-fusion/quant-sdk-js": "^0.1.0",
+    "@quant-fusion/research-core": "^0.1.0",
+    "@quant-fusion/sqlite-migrations": "^0.1.0",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@quant-fusion/rng": "^0.1.0",
+    "@types/express": "^4.17.21"
+  }
+}

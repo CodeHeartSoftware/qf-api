@@ -1,0 +1,18 @@
+{
+  "id": "quant-v0",
+  "name": "Quant v0",
+  "version": "0.1.0",
+  "game": "stock-market-4",
+  "author": {
+    "name": "Quant Fusion Maintainers",
+    "contact": "maintainers@example.com"
+  },
+  "runtime": {
+    "language": "node"
+  },
+  "interface": {
+    "transport": "stdio"
+  },
+  "protocolVersion": "^1.0",
+  "description": "Experimental quant-research harness testing whether point-in-time fusion research produces genuine out-of-sample alpha: independent, IC-weighted alpha signals, a pluggable (non-mean-variance) portfolio-construction layer, a shrink-only risk stage, a bounded transaction-cost model, and a null-research ablation switch — evaluated via walk-forward validation against frozen fusion-fundamental-v6/fusion-fundamental-v7 benchmarks."
+}

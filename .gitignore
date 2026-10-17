@@ -1,0 +1,15 @@
+node_modules
+dist
+*.log
+.DS_Store
+.idea
+.yarn
+
+# Coverage / build output
+coverage
+*.tsbuildinfo
+__pycache__
+*.pyc
+
+# Local tournament records (apps/cli/src/commands/tournament.ts) — run state, not source
+.quant-fusion/

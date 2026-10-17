@@ -1,0 +1,23 @@
+{
+  "name": "@quant-fusion/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "quant-fusion": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@quant-fusion/engine": "^0.1.0",
+    "@quant-fusion/forward-match-store": "^0.1.0",
+    "@quant-fusion/market-data": "^0.1.0",
+    "@quant-fusion/registry": "^0.1.0",
+    "@quant-fusion/research-fusion": "^0.1.0",
+    "@quant-fusion/rng": "^0.1.0",
+    "@quant-fusion/runtime": "^0.1.0"
+  }
+}

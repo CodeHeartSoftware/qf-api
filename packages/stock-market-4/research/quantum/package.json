@@ -1,0 +1,19 @@
+{
+  "name": "@quant-fusion/research-quantum",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "vitest run",
+    "generate:quantum-seed-migration": "tsx --tsconfig tsconfig.test.json scripts/generateQuantumSeedMigration.ts"
+  },
+  "dependencies": {
+    "@quant-fusion/research-core": "^0.1.0",
+    "@quant-fusion/research-store": "^0.1.0",
+    "@quant-fusion/sqlite-migrations": "^0.1.0"
+  }
+}

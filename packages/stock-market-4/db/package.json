@@ -1,0 +1,19 @@
+{
+  "name": "@quant-fusion/stock-market-4-db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@quant-fusion/forward-match-store": "^0.1.0",
+    "@quant-fusion/market-data": "^0.1.0",
+    "@quant-fusion/research-store": "^0.1.0",
+    "@quant-fusion/sqlite-migrations": "^0.1.0"
+  }
+}

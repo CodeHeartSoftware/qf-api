@@ -1,0 +1,17 @@
+{
+  "name": "@quant-fusion/registry",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@quant-fusion/bot-sdk-js": "^0.1.0",
+    "@quant-fusion/game-sdk": "^0.1.0"
+  }
+}

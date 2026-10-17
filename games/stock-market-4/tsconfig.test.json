@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    // Type-check-only (noEmit) config, so rootDir has no bearing on actual output — it's only
+    // relevant here because scripts/ deep-imports bot source across the games/bots boundary
+    // (see games/stock-market-4/scripts/*.ts), which sits outside games/stock-market-4 itself.
+    // Set to the repo root (the real common ancestor of every included file) instead of "."
+    // (games/stock-market-4 alone), which flagged every such import as a TS6059 rootDir
+    // violation — see docs/adr or the scripts' own module comments for why they deep-import bot
+    // source rather than going through a package boundary.
+    "rootDir": "../.."
+  },
+  "include": ["src", "test", "scripts"]
+}
